@@ -173,12 +173,12 @@ DefaultTableModel TablaModelo = new DefaultTableModel();
            datos.setCelular(txtcelular.getText());
            
            if (conexion.insertar(datos)) {
-               JOptionPane.showMessageDialog(this, "Se grabo correctamente...");    
+               JOptionPane.showMessageDialog(this, "Se grabo de forma correcta");    
             TablaModelo= (DefaultTableModel) tabla.getModel();
             TablaModelo.getDataVector().removeAllElements();
             cargar();
         }else{
-               JOptionPane.showMessageDialog(this, "Error al grabar...");           
+               JOptionPane.showMessageDialog(this, "Error");           
            }
     }//GEN-LAST:event_jButton1ActionPerformed
 

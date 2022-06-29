@@ -102,11 +102,18 @@ public class from extends javax.swing.JInternalFrame {
                     
                     if(pass.equals(p)){                    
                         if(priv.equals("empleado")){
-                            jefe kratos = new jefe();
-                            kratos.setVisible(true);
-                        }else{
-                            empleado cortana = new empleado ();
+                             admin cortana = new admin ();
+                            inter.contenedor.add(cortana);
+                            cortana.toFront();
                             cortana.setVisible(true);
+                            this.dispose();
+                        }else{
+                           
+                            usuario kratos = new usuario();
+                            inter.contenedor.add(kratos);
+                            kratos.toFront();
+                            kratos.setVisible(true);
+                            this.dispose();
                         }
                         
                         
